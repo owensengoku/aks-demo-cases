@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: azcopy
+  labels:
+    aadpodidbinding: my-pod-identity #$POD_IDENTITY_NAME
+spec:
+  containers:
+  - name: azcopy
+    image: datenbetrieb/azcopy:v10.10.0
+    command:
+      - "bin/bash"
+      - "-c"
+      - "sleep 10000"
+    env:
+      - name: MY_POD_NAME
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.name
+      - name: MY_POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.namespace
+      - name: MY_POD_IP
+        valueFrom:
+          fieldRef:
+            fieldPath: status.podIP
+  nodeSelector:
+    kubernetes.io/os: linux
