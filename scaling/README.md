@@ -50,5 +50,11 @@ az aks update \
 
 
 ## Ref
-
 https://docs.microsoft.com/en-us/learn/modules/aks-workshop/10-scale-application
+
+
+
+## Special Note: KEDA
+https://keda.sh/
+
+https://docs.microsoft.com/en-us/learn/modules/aks-app-scale-keda/
