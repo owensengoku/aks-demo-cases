@@ -34,7 +34,9 @@ kubectl describe secret mongosecret --namespace ratingsapp
 
 
 ## Ref
-https://docs.microsoft.com/en-us/learn/modules/aks-workshop/04-deploy-mongodb
-https://docs.microsoft.com/en-us/learn/modules/aks-workshop/05-deploy-ratings-api
-https://docs.microsoft.com/en-us/learn/modules/aks-workshop/06-deploy-ratings-web
+- https://docs.microsoft.com/en-us/learn/modules/aks-workshop/04-deploy-mongodb
+
+- https://docs.microsoft.com/en-us/learn/modules/aks-workshop/05-deploy-ratings-api
+
+- https://docs.microsoft.com/en-us/learn/modules/aks-workshop/06-deploy-ratings-web
 
