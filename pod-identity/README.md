@@ -40,7 +40,7 @@ az aks pod-identity add --resource-group $RESOURCE_GROUP --cluster-name $AKS_CLU
 
 ### Demo
 - `$ kubectl apply -f demo.yaml --namespace $POD_IDENTITY_NAMESPACE`
-- `$ kubectl logs demo --follow --namespace $POD_IDENTITY_NAMESPACEˋ
+- `$ kubectl logs demo --follow --namespace $POD_IDENTITY_NAMESPACE`
 
 
 ## Storage Account
@@ -79,8 +79,8 @@ az storage container create \
 
 ### azcopy
 - ` $ kubectl apply -f azcopy.yaml -n ratingsapp `
-- ` $ kubectl cp a-lot-of-yamls.jpg azcopy:/home -n ratingsapp ˋ
-- ` $ kubectl exec -it azcopy -n ratingsapp -- bash ˋ
+- ` $ kubectl cp a-lot-of-yamls.jpg azcopy:/home -n ratingsapp `
+- ` $ kubectl exec -it azcopy -n ratingsapp -- bash`
 
 #### In Cotainer
 - ` $ cd home `
